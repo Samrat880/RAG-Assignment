@@ -48,6 +48,22 @@ rag/
    npm install
    ```
 
+   ## Installation
+
+Install all required packages by running:
+
+```bash
+npm install @langchain/community @langchain/core @langchain/openai pdf-parse qdrant-client dotenv
+```
+
+**Packages used:**
+- `@langchain/community` – LangChain community integrations
+- `@langchain/core` – LangChain core utilities
+- `@langchain/openai` – OpenAI integration for LangChain
+- `pdf-parse` – PDF text extraction
+- `qdrant-client` – Qdrant vector database client
+- `dotenv` – Loads environment variables from `.env` file
+
 3. **Set up environment variables:**
    - Create a `.env` file in the `rag` directory.
 
@@ -211,13 +227,7 @@ docker-compose up -d
   npm install --legacy-peer-deps
   ```
 
-- **node_modules in Git:**  
-  If `node_modules` was accidentally committed, remove it:
-  ```bash
-  git rm -r --cached node_modules
-  git commit -m "Remove node_modules from repo"
-  git push
-  ```
+
 
 ---
 
